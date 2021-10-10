@@ -1,0 +1,54 @@
+.nav-tabs .Game-unit-tab {
+  background-color: #202020;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px !important;
+  font-weight: 400;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.nav-tabs .Game-unit-tab:hover {
+  color: lightgreen !important;
+}
+
+.nav-tabs .Game-unit-tab.active {
+  color: black;
+  font-weight: 900;
+}
+
+.Game-unit-tab:nth-child(1).active {
+  background-color: #fdb901;
+}
+
+.Game-unit-tab:nth-child(2).active {
+  background-color: #28afd0;
+}
+
+.Game-unit-tab:nth-child(3).active {
+  background-color: #b71c1c;
+  color: #fff;
+}
+
+.tab-content .Game-unit-container.acive {
+  background-color: #000;
+  width: 100% !important;
+}
+
+.figure-declared .input-group-prepend span,
+.declared-pana .declared-pana-num .input-group-prepend span,
+.declared-jodi .declared-jodi-num .input-group-prepend span {
+  background: red !important;
+  color: white !important;
+  border-color: red !important;
+}
+
+.figure-declared input,
+.declared-pana .card .collapsed,
+.declared-pana-num input,
+.declared-jodi .card .collapsed,
+.declared-jodi-num input {
+  background: darkred !important;
+  color: white !important;
+  border-color: red !important;
+}

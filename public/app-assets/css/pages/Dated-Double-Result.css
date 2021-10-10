@@ -1,0 +1,172 @@
+.table.table-sm td {
+  padding: 4px !important;
+}
+
+.dt-buttons .buttons-print,
+.dt-buttons .buttons-html5 {
+
+  line-height: 1;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+  border-radius: 6px !important;
+  background-color: #49688a !important;
+  color: #000 !important;
+  margin: 5px !important;
+
+}
+
+.row-grouping thead tr,
+.row-grouping tfoot tr,
+.dataTables_filter .form-control-sm,
+.dataTables_paginate .pagination .paginate_button a,
+.dataTables_length label select {
+  font-weight: bold;
+  background-color: #192029 !important;
+  color: #fff !important;
+  border-color: #1a3250 !important;
+}
+
+.dataTables_paginate .pagination .active a {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info {
+  color: #2d7cd6 !important;
+}
+
+.table-theme-dark,
+.table-theme-dark > th,
+.table-theme-dark > td {
+  background-color:  #1e2831;
+}
+
+.table-theme-dark th,
+.table-theme-dark td,
+.table-theme-dark thead th,
+.table-theme-dark tbody + tbody {
+  border-color:  #0b1014;
+}
+
+.table-hover .table-theme-dark:hover {
+  background-color:  #0f131f;
+}
+.table-hover .table-theme-dark:hover > td,
+.table-hover .table-theme-dark:hover > th {
+  background-color:   #121624;
+}
+
+.table-theme-dark {
+  color: #e4eaf8;
+  background-color:   #1c252e;
+}
+.table-theme-dark th,
+.table-theme-dark td,
+.table-theme-dark thead th {
+  border-color:   #1e2831;
+}
+.table-theme-dark.table-bordered {
+  border: 0;
+}
+.table-theme-dark.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.table-theme-dark.table-hover tbody tr:hover {
+  color: #e4eaf8;
+  background-color: rgba(178, 183, 255, 0.2);
+}
+
+
+  .table-theme-dark {
+    color: inherit;
+  }
+  .table-theme-dark th,
+  .table-theme-dark td,
+  .table-theme-dark thead th,
+  .table-theme-dark tbody + tbody {
+    border-color: #384966;
+  }
+
+
+/* double result css */
+.declare-num-active {
+  color: #000 !important;
+  font-weight: bolder;
+}
+
+.hover-num-color:hover {
+  background-color: #006064 !important;
+}
+
+.dobleresulttexttheme {
+  color: #18FFFF;
+}
+
+.Chart-col-date {
+  border: 0px solid #ffffff20;
+  width: 14.6%;
+  position: relative;
+  font-family: Brandon Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-weight: 800;
+  color: #18FFFF;
+}
+
+.charttodaysdoblebox {
+  border-radius: 6px !important;
+  background-color: rgba(24, 255, 255, 0.05) !important;
+  border: 1px solid #00E5FF !important;
+}
+
+input#num1,
+input#num2,
+input#num3,
+input#num4,
+input#num5,
+input#num6,
+input#num7,
+input#num8,
+input#num9,
+input#num0 {
+  transform: scale(2);
+  margin-top: 6px !important;
+  margin-bottom: 0px !important;
+}
+
+
+.blinks {
+  -webkit-animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+  100% {
+    visibility: hidden;
+  }
+}
+
+.table-Declare th,
+.table-Declare td,
+.table-Declare thead th,
+.table-Declare tbody+tbody {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+
+.table-Declare.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.game-num-box {
+  font-size: 12.6px;
+}
+
+
+
+
+
+
+
+  

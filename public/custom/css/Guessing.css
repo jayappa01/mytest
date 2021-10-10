@@ -1,0 +1,16 @@
+.chat-height {
+  height: calc(100vh - 190px) !important;
+}
+
+.chat-bg-image {
+  position: relative;
+  color: white;
+}
+
+.WhatsAppbar-color {
+  background-color: #075e54;
+}
+
+.WhatsAppbtn-color {
+  background-color: #128c7e;
+}

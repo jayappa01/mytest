@@ -1,0 +1,50 @@
+.declare-num-active {
+  color: #000 !important;
+  font-weight: bolder;
+}
+
+.hover-num-color:hover {
+  background-color: #006064 !important;
+}
+
+.resulttexttheme {
+  color: #18FFFF;
+}
+
+.Chart-col-date {
+  border: 0px solid #ffffff20;
+  width: 14.6%;
+  position: relative;
+  font-family: Brandon Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-weight: 800;
+  color: #18FFFF;
+}
+
+.charttodaysbox {
+  border-radius: 6px !important;
+  background-color: rgba(24, 255, 255, 0.05) !important;
+  border: 1px solid #00E5FF !important;
+}
+
+.playVideo-perPage {
+ z-index: 2 !important;
+ right: 5px !important;
+ top: 75px !important;
+ position: fixed;
+
+}
+
+.playVideo-perPage .video-play-btn {
+ border-radius: 6px;
+ padding-left: 3px;
+ padding-right: 3px;
+ width: 34px;
+ height: 26px;
+ font-size: 27px;
+ background-color: rgba(255, 0, 0, 0.5);
+ color: white;
+}
+
+.playVideo-perPage:hover .video-play-btn {
+ background-color: red;
+}

@@ -1,0 +1,60 @@
+.overlayboxdiamond {
+  border-color: #242424 !important;
+  border-width: 6px !important;
+  position: absolute;
+  top: -40px;
+  left: 30px;
+  height: 95px;
+  width: 95px;
+  /* Rotate */
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  /* Rotate Origin */
+}
+
+.overlayboxdiamond i {
+  /* Rotate */
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  /* Rotate Origin */
+}
+
+.maincardtitle {
+  font-size: 27px;
+}
+
+@media (max-width: 1360px) {
+  .maincardtitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .maincardtitle {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 791px) {
+  .maincardtitle {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .maincardtitle {
+    font-size: 8.5vw;
+  }
+}
+
+@media (max-width: 414px) {
+  .maincardtitle {
+    font-size: 6.5vw;
+  }
+}

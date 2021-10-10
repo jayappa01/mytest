@@ -1,0 +1,147 @@
+.table.table-sm td {
+  padding: 4px !important;
+}
+
+.dt-buttons .buttons-print,
+.dt-buttons .buttons-html5 {
+
+  line-height: 1;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+  border-radius: 6px !important;
+  background-color: #8a4949 !important;
+  color: #000 !important;
+  margin: 5px !important;
+
+}
+
+.row-grouping thead tr,
+.row-grouping tfoot tr,
+.dataTables_filter .form-control-sm,
+.dataTables_paginate .pagination .paginate_button a,
+.dataTables_length label select {
+  font-weight: bold;
+  background-color: #291921 !important;
+  color: #fff !important;
+  border-color: #501a31 !important;
+}
+
+.dataTables_paginate .pagination .active a {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info {
+  color: #f15656 !important;
+}
+
+.table-theme-dark,
+.table-theme-dark>th,
+.table-theme-dark>td {
+  background-color: #311e29;
+}
+
+.table-theme-dark th,
+.table-theme-dark td,
+.table-theme-dark thead th,
+.table-theme-dark tbody+tbody {
+  border-color: #140b10;
+}
+
+.table-hover .table-theme-dark:hover {
+  background-color: #1f0f1a;
+}
+
+.table-hover .table-theme-dark:hover>td,
+.table-hover .table-theme-dark:hover>th {
+  background-color: #1b0e16;
+}
+
+.table-theme-dark {
+  color: #e4eaf8;
+  background-color: #2e1c27;
+}
+
+.table-theme-dark th,
+.table-theme-dark td,
+.table-theme-dark thead th {
+  border-color: #311e1e;
+}
+
+.table-theme-dark.table-bordered {
+  border: 0;
+}
+
+.table-theme-dark.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.251);
+  
+}
+
+.table-theme-dark.table-hover tbody tr:hover {
+  color: #e4eaf8;
+  background-color: #ff50506e;
+}
+
+
+.table-theme-dark {
+  color: inherit;
+}
+
+.table-theme-dark th,
+.table-theme-dark td,
+.table-theme-dark thead th,
+.table-theme-dark tbody+tbody {
+  border-color: #4e0a15;
+}
+
+
+/* single result css */
+
+
+
+.hover-num-color:hover {
+  background-color: #6d0000 !important;
+}
+
+.singleresulttexttheme,
+.body-date {
+  color: #ff183f !important;
+}
+
+.charttodayssinglebox {
+  background-color: rgba(255, 24, 62, 0.938) !important;
+  border: 1px solid #ff0000 !important;
+}
+
+.charttodayssinglebox .head-game,
+.charttodayssinglebox .footer-timed {
+  background-color: rgba(122, 0, 20, 0.6) !important;
+}
+
+.bonus-result1 {
+  background-image: linear-gradient(45deg, #562b74, #8937b8) !important;
+  background-repeat: repeat-x;
+  color: #fdcf01;
+  border: 1px solid #fdcf01;
+
+}
+
+.rotate-90text-double,
+.rotate-90text-Single {
+  white-space: nowrap;
+  width: 0;
+}
+
+.rotate-90text-double>h5 {
+  transform: translate(36px, 42px) rotate(-90deg);
+  padding: 5px 10px;
+}
+
+.rotate-90text-Single>h6 {
+  transform: translate(-12px, 38px) rotate(-90deg);
+  padding: 5px 10px;
+}

@@ -1,0 +1,53 @@
+.nav-tabs .payment-type-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px !important;
+  border-radius: 8px 0px 0px 8px;
+  margin-top: 5px;
+  background-color: #0f0f0f;
+  color: #fff;
+  font-weight: 200;
+}
+
+.payment-type-btn .active,
+.payment-type-btn:nth-child(1).active,
+.payment-type-btn:nth-child(2).active,
+.payment-type-btn:nth-child(3).active,
+.payment-type-btn:nth-child(4).active {
+  font-weight: 900;
+  font-size: 18px !important;
+}
+
+.nav-tabs .payment-type-btn:hover {
+  background-color: white;
+  color: #101010 !important;
+}
+
+.tabs-contantStyle:nth-child(1),
+.payment-type-btn:nth-child(1).active {
+  background-color: #042e6f;
+  color: white !important;
+}
+
+.tabs-contantStyle:nth-child(2),
+.payment-type-btn:nth-child(2).active {
+  background-color: #4285f4;
+  color: white !important;
+}
+
+.tabs-contantStyle:nth-child(3),
+.payment-type-btn:nth-child(3).active {
+  background-color: #075e54;
+  color: white !important;
+}
+
+.tabs-contantStyle:nth-child(4),
+.payment-type-btn:nth-child(4).active {
+  background-color: #6739b7;
+  color: white !important;
+}
+
+.tab-content .payment-type-btn.acive {
+  background-color: #000;
+  width: 100% !important;
+}

@@ -1,0 +1,12 @@
+For the naming part of file the names will be the same eg:-
+
+( index.php )
+
+( index.css )
+
+( index.js )
+
+
+javascripts file (js) for the individual page in this location ( app-assets/css/pages/ )
+
+javascripts file (js) for the individual page in this location ( app-assets/js/scripts/pages/ )

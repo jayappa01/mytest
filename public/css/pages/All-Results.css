@@ -1,0 +1,141 @@
+.row-striped:nth-of-type(even) {
+    background-color: #00000020;
+}
+
+
+/* Double Game Chart Style Starts From Here */
+
+.Chart-col {
+    width: 12.2%;
+    position: relative;
+    font-family: Brandon Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+    font-weight: 700;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.Chart-col-date {
+    width: 14.6%;
+    position: relative;
+    font-family: Brandon Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+    font-weight: 800;
+    color: #ffc400;
+}
+
+.Chart-col-date,
+.Chart-col {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.vertical-pana {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 400;
+    line-height: 0.2;
+}
+
+.days-bar-day {
+    width: 12.2%;
+    font-family: Brandon Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+    font-weight: 500;
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.days-bar-date {
+    width: 14.6%;
+    font-family: Brandon Text, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+    font-weight: 500;
+}
+
+.the-red-result {
+    color: #ff0000;
+    font-weight: 900;
+}
+
+.row-striped:nth-of-type(even):hover .the-red-result,
+.row-striped:nth-of-type(even):hover .Chart-col-date,
+.row-striped:nth-of-type(odd):hover .the-red-result,
+.row-striped:nth-of-type(odd):hover .Chart-col-date {
+    color: rgb(1, 26, 63) !important;
+}
+
+
+.row-striped:nth-of-type(even):hover {
+    border-radius: 6px;
+    background-image: linear-gradient(to right top, #0064ff, #475dff, #6855ff, #844afe, #9c3bfb, #cc21e0, #eb00c5, #ff00aa, #ff317a, #ff6d4c, #ffa31e, #ffd300);
+}
+
+.row-striped:nth-of-type(odd):hover {
+    border-radius: 6px;
+    background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-image: linear-gradient(to right top, #003076, #0069b0, #009ead, #00cc72, #c5eb12);
+}
+
+.Chart-col,
+.game-chart-name {
+    font-size: 2.2vw !important;
+}
+
+.vertical-pana {
+    font-size: 1.1vw !important;
+    line-height: 1;
+}
+
+.Chart-col-date,
+.game-chart-time-text,
+.days-bar-day,
+.days-bar-date,
+.game-chart-company-name,
+.game-chart-time {
+    font-size: 0.7vw !important;
+}
+
+@media only screen and (max-width: 1890px) {
+
+    .Chart-col,
+    .game-chart-name {
+        font-size: 3.2vw !important;
+    }
+
+    .Chart-col-date,
+    .vertical-pana,
+    .game-chart-time-text,
+    .days-bar-day,
+    .days-bar-date,
+    .game-chart-company-name,
+    .game-chart-time {
+        font-size: 1.5vw !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .Chart-col,
+    .game-chart-name {
+        font-size: 5.2vw !important;
+    }
+
+    .Chart-col-date,
+    .vertical-pana,
+    .game-chart-time-text {
+        font-size: 1.9vw !important;
+    }
+
+    .days-bar-day,
+    .days-bar-date,
+    .game-chart-company-name,
+    .game-chart-time {
+        font-size: 2.2vw !important;
+    }
+}
+
+.charttodaysbox {
+    border-radius: 6px !important;
+    background-color: rgba(255, 196, 0, 0.05) !important;
+    border: 1px solid #ffc400 !important;
+}
+
+
+/* Double Game Chart Style Ends From Here */

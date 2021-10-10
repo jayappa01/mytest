@@ -1,0 +1,371 @@
+/* Single Game Chart Style Starts From Here */
+
+.row-single-striped {
+  padding-top: 4PX;
+  padding-bottom: 4PX;
+}
+
+.singleChart-date-size {
+  width: calc(8.2% - 2px) !important;
+  margin-left: 1px;
+  margin-right: 1px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.singleChart-timeresult-size {
+  width: calc(7.65% - 2px) !important;
+  margin-left: 1px;
+  margin-right: 1px;
+  background-repeat: repeat-x;
+  color: #fff;
+  border: 1px solid #1d1d1d;
+}
+
+.row-single-striped:nth-of-type(even) .singleChart-date-size {
+  background-image: linear-gradient(45deg, #752327, #6b3c3e);
+  border: 1px solid #ee4a53;
+}
+
+.row-single-striped:nth-of-type(odd) .singleChart-date-size {
+  background-image: linear-gradient(45deg, #234374, #3a4e68);
+  border: 1px solid #4c8dee;
+}
+
+.row-single-striped:nth-of-type(even) .singleChart-timeresult-size {
+  background-image: linear-gradient(45deg, #f06168, #eea1a4);
+}
+
+.row-single-striped:nth-of-type(odd) .singleChart-timeresult-size {
+  background-image: linear-gradient(45deg, #679ef0, #a4c6f1);
+}
+
+.singleChart-date-size .head-name,
+.singleChart-date-size .body-date,
+.singleChart-date-size .footer-name,
+.singleChart-timeresult-size .head-game,
+.singleChart-timeresult-size .body-figure,
+.singleChart-timeresult-size .footer-timed {
+  font-weight: 900;
+}
+
+.singleChart-date-size .body-date {
+  color: #fdcf01;
+}
+
+.singleChart-timeresult-size .body-pana,
+.singleChart-timeresult-size .body-figure {
+  color: #000;
+}
+
+.singleChart-timeresult-size .body-pana {
+  font-size: 0.7vw !important;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+.singleChart-timeresult-size .body-figure {
+  font-size: 1vw !important;
+  line-height: 100%;
+}
+
+.bonus-result {
+  background-image: linear-gradient(45deg, #562b74, #8837b8) !important;
+  background-repeat: repeat-x;
+  color: #fdcf01;
+  border: 1px solid #fdcf01;
+
+}
+
+.bonus-result .body-pana,
+.bonus-result .body-figure {
+  color: #fdcf01;
+}
+
+@media only screen and (max-width: 1890px) {
+  .singleChart-date-size .head-name {
+    font-size: 0.8vw !important;
+  }
+
+  .singleChart-date-size .body-date {
+    font-size: 0.8vw !important;
+  }
+
+  .singleChart-date-size .footer-name {
+    font-size: 1.1vw !important;
+  }
+
+  .singleChart-timeresult-size .head-game {
+    font-size: 0.8vw !important;
+  }
+
+  .singleChart-timeresult-size .body-pana {
+    font-size: 1vw !important;
+    line-height: 100%;
+    font-weight: 400;
+  }
+
+  .singleChart-timeresult-size .body-figure {
+    font-size: 1.4vw !important;
+    line-height: 100%;
+  }
+
+  .singleChart-timeresult-size .footer-timed {
+    font-size: 0.95vw !important;
+  }
+
+}
+
+
+@media only screen and (max-width: 1600px) {
+
+  .singleChart-date-size .head-name {
+    font-size: 0.95vw !important;
+  }
+
+  .singleChart-date-size .body-date {
+    font-size: 1.0vw !important;
+  }
+
+  .singleChart-date-size .footer-name {
+    font-size: 1.1vw !important;
+  }
+
+  .singleChart-timeresult-size .head-game {
+    font-size: 0.95vw !important;
+  }
+
+  .singleChart-timeresult-size .body-pana {
+    font-size: 1.4vw !important;
+    line-height: 100%;
+    font-weight: 500;
+  }
+
+  .singleChart-timeresult-size .body-figure {
+    font-size: 1.9vw !important;
+    line-height: 100%;
+  }
+
+  .singleChart-timeresult-size .footer-timed {
+    font-size: 1vw !important;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  .singleChart-date-size .head-name {
+    font-size: 0.9vw !important;
+  }
+
+  .singleChart-date-size .body-date {
+    font-size: 1.6vw !important;
+  }
+
+  .singleChart-date-size .footer-name {
+    font-size: 1.1vw !important;
+  }
+
+  .singleChart-timeresult-size .head-game {
+    font-size: 0.95vw !important;
+  }
+
+  .singleChart-timeresult-size .body-pana {
+    font-size: 2.2vw !important;
+    line-height: 100%;
+    font-weight: 600;
+  }
+
+  .singleChart-timeresult-size .body-figure {
+    font-size: 2.8vw !important;
+    line-height: 100%;
+  }
+
+  .singleChart-timeresult-size .footer-timed {
+    font-size: 1.1vw !important;
+  }
+
+
+}
+
+
+
+/* Single Game Chart Style Ends From Here */
+
+
+/* Single Game no color Chart Style Starts From Here */
+
+.row-single-striped1 {
+  padding-top: 4PX;
+  padding-bottom: 4PX;
+}
+
+.singleChart-date-size1 {
+  width: calc(8.2% - 2px) !important;
+  margin-left: 1px;
+  margin-right: 1px;
+  color: #fff;
+  font-weight: bolder;
+  border: 1px solid #575656;
+}
+
+.singleChart-timeresult-size1 {
+  width: calc(7.65% - 2px) !important;
+  margin-left: 1px;
+  margin-right: 1px;
+  background-repeat: repeat-x;
+  color: #fff;
+  border: 1px solid #575656;
+}
+
+.row-single-striped1:nth-of-type(odd) .singleChart-date-size1,
+.row-single-striped1:nth-of-type(odd) .singleChart-timeresult-size1 {
+  background-color: #00000040;
+}
+
+
+
+.singleChart-date-size1 .head-name,
+.singleChart-date-size1 .body-date,
+.singleChart-date-size1 .footer-name,
+.singleChart-timeresult-size1 .head-game,
+.singleChart-timeresult-size1 .body-figure,
+.singleChart-timeresult-size1 .footer-timed {
+  font-weight: 900;
+}
+
+.singleChart-date-size1 .body-date {
+  color: #fdcf01;
+}
+
+.singleChart-timeresult-size1 .body-pana {
+  font-size: 0.7vw !important;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+.singleChart-timeresult-size1 .body-figure {
+  font-size: 1vw !important;
+  line-height: 100%;
+}
+
+.bonus-result1 {
+  background-image: linear-gradient(45deg, #562b7460, #8837b860) !important;
+  background-repeat: repeat-x;
+  color: #fdcf01;
+  border: 1px solid #fdcf01;
+
+}
+
+.bonus-result1 .body-pana,
+.bonus-result1 .body-figure {
+  color: #fdcf01;
+}
+
+@media only screen and (max-width: 1890px) {
+  .singleChart-date-size1 .head-name {
+    font-size: 0.8vw !important;
+  }
+
+  .singleChart-date-size1 .body-date {
+    font-size: 0.8vw !important;
+  }
+
+  .singleChart-date-size1 .footer-name {
+    font-size: 1.1vw !important;
+  }
+
+  .singleChart-timeresult-size1 .head-game {
+    font-size: 0.8vw !important;
+  }
+
+  .singleChart-timeresult-size1 .body-pana {
+    font-size: 1vw !important;
+    line-height: 100%;
+    font-weight: 400;
+  }
+
+  .singleChart-timeresult-size1 .body-figure {
+    font-size: 1.4vw !important;
+    line-height: 100%;
+  }
+
+  .singleChart-timeresult-size1 .footer-timed {
+    font-size: 0.95vw !important;
+  }
+
+}
+
+
+@media only screen and (max-width: 1600px) {
+
+  .singleChart-date-size1 .head-name {
+    font-size: 0.95vw !important;
+  }
+
+  .singleChart-date-size1 .body-date {
+    font-size: 1.0vw !important;
+  }
+
+  .singleChart-date-size1 .footer-name {
+    font-size: 1.1vw !important;
+  }
+
+  .singleChart-timeresult-size1 .head-game {
+    font-size: 0.95vw !important;
+  }
+
+  .singleChart-timeresult-size1 .body-pana {
+    font-size: 1.4vw !important;
+    line-height: 100%;
+    font-weight: 500;
+  }
+
+  .singleChart-timeresult-size1 .body-figure {
+    font-size: 1.9vw !important;
+    line-height: 100%;
+  }
+
+  .singleChart-timeresult-size1 .footer-timed {
+    font-size: 1vw !important;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  .singleChart-date-size1 .head-name {
+    font-size: 0.9vw !important;
+  }
+
+  .singleChart-date-size1 .body-date {
+    font-size: 1.6vw !important;
+  }
+
+  .singleChart-date-size1 .footer-name {
+    font-size: 1.1vw !important;
+  }
+
+  .singleChart-timeresult-size1 .head-game {
+    font-size: 0.95vw !important;
+  }
+
+  .singleChart-timeresult-size1 .body-pana {
+    font-size: 2.2vw !important;
+    line-height: 100%;
+    font-weight: 600;
+  }
+
+  .singleChart-timeresult-size1 .body-figure {
+    font-size: 2.8vw !important;
+    line-height: 100%;
+  }
+
+  .singleChart-timeresult-size1 .footer-timed {
+    font-size: 1.1vw !important;
+  }
+
+
+}
+
+
+
+/* Single Game no color Chart Style Ends From Here */
