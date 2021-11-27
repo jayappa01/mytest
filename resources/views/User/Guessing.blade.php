@@ -4,6 +4,7 @@
 
 <link rel="stylesheet" type="text/css" href="{{asset('public/custom/css/chat-application.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('public/custom/css/Guessing.css')}}">
+<meta name="csrf-token" content="{{ csrf_token() }}" />
 <div class="row">
 
   <div class="col-12 ">

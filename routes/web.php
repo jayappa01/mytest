@@ -28,9 +28,7 @@ Route::get('/Phonepe-Gateway','RechargeController@handleWhatsappPay')->name('Pho
 Route::get('/Withdrawal','WithdrawalController@handleWithdrawal')->name('Withdrawal');
 Route::get('/Add-User', 'AddUserController@handleCreateUser')->name('Add-User');
 Route::get('/Admin-Hisab','HisabController@handleAdminHisab')->name('Admin-Hisab');
-Route::get('/Message', 'MessageController@handleMessage')->name('Message');
-Route::get('/Guessing-Manager','MessageController@handleGuessingManager')->name('Guessing-Manager');
-Route::get('/Messaging-Users','MessageController@handleMessagingUsers')->name('Messaging-Users');
+
 Route::get('/Advance-Double-Result-Date','AdminController@handleAdvanceDoubleResultDate')->name('Advance-Double-Result-Date');
 Route::get('/Advance-Single-Result-Date','AdminController@handleAdvanceSingleResultDate')->name('Advance-Single-Result-Date');
 Route::get('/Dated-Double-Result','AdminController@handleDatedDoubleResult')->name('Dated-Double-Result');
@@ -48,20 +46,36 @@ Route::get('/Play-Double-Game-Close', 'UserController@handlePlayDoubleGameClose'
 Route::get('/Play-Double-Game-Open', 'UserController@handlePlayDoubleGameOpen')->name('Play-Double-Game-Open');
 Route::get('/See-Game-Result', 'GameResultController@handleSeeGameResults')->name('See-Game-Result');
 Route::get('/My-Balance', 'UserDashboardController@handleMyBalance')->name('My-Balance');
-Route::get('/Admin-Message', 'UserDashboardController@handleAdminMessage')->name('Admin-Message');
-Route::get('/Guessing', 'UserDashboardController@handleGuessing')->name('Guessing');
+
 Route::get('/See-History', 'UserDashboardController@handleSeeHistory')->name('See-History');
 Route::get('/User-Account', 'UserDashboardController@handleUserAccount')->name('User-Account');
 Route::get('/See-Hisab', 'UserDashboardController@handleSeeHisab')->name('See-Hisab');
 Route::get('/Game-Results', 'UserDashboardController@handleGameResults')->name('Game-Results');
+Route::get('/Admin-Setting', 'AdminController@handleAdminSetting')->name('Admin-Setting');
+
 Route::get('/Balance-Records', 'UserDashboardController@handleBalanceRecords')->name('Balance-Records');
-Route::get('/Buy-Guessing', 'UserDashboardController@handleBuyGuessing')->name('Buy-Guessing');
+
 Route::get('/History-Type', 'UserDashboardController@handleHistoryType')->name('History-Type');
 Route::get('/History-Double-Game', 'UserDashboardController@handleHistoryDoubleGame')->name('History-Double-Game');
 Route::get('/History-Double-Game-Open', 'UserDashboardController@handleHistoryDoubleGameOpen')->name('History-Double-Game-Open');
 Route::get('/History-Double-Game-Close', 'UserDashboardController@handleHistoryDoubleGameClose')->name('History-Double-Game-Close');
 Route::get('/Payment-Method', 'UserDashboardController@handlePaymentMethod')->name('Payment-Method');
 
+//Message
+
+Route::get('/Admin-Message', 'UserDashboardController@handleAdminMessage')->name('Admin-Message');
+Route::get('/Guessing', 'UserDashboardController@handleGuessing')->name('Guessing');
+
+Route::get('/Buy-Guessing', 'UserDashboardController@handleBuyGuessing')->name('Buy-Guessing');
+
+Route::get('/Message', 'MessageController@handleMessage')->name('Message');
+Route::get('/Guessing-Manager','MessageController@handleGuessingManager')->name('Guessing-Manager');
+Route::get('/Messaging-Users','MessageController@handleMessagingUsers')->name('Messaging-Users');
+
+
+Route::get('/Payment-Problem', 'MessageController@handlePaymentProblem')->name('Payment-Problem');
+Route::get('/Front-End-Message', 'MessageController@handleFrontEndMessage')->name('Front-End-Message');
+Route::get('/Pop-Up-Message', 'MessageController@handlePopUpMessage')->name('Pop-Up-Message');
 
 
 //Post User
@@ -72,11 +86,20 @@ Route::post('/AddGame', 'DoubleGameDetailController@handleAddGame')->name('AddGa
 Route::post('/Edit-Double-Game', 'DoubleGameDetailController@handleEditGame')->name('Edit-Double-Game');
 Route::post('/Delete-Double-Game', 'DoubleGameDetailController@handleDeleteDoubleGame')->name('Delete-Double-Game');
 
+Route::post('/Load-Panna', 'DoubleGameDetailController@handleLoadPanna')->name('Load-Panna');
+
 Route::get('/Add-Single-Game','SingleGameDetailController@handleCreateSingleGame')->name('Add-Single-Game');
 Route::post('/AddSingleGame', 'SingleGameDetailController@handleAddSingleGame')->name('AddSingleGame');
 Route::post('/Edit-Single-Game', 'SingleGameDetailController@handleEditSingleGame')->name('Edit-Single-Game');
 Route::post('/Delete-Single-Game', 'SingleGameDetailController@handleDeleteSingleGame')->name('Delete-Single-Game');
 
+Route::post('/Add-Double-Game-Result', 'DoubleGameDetailController@handleDoubleGameResult')->name('Add-Double-Game-Result');
+
+//message
+
+Route::post('/Add-User-Msg', 'MessageController@handleAddUserMsg')->name('Add-User-Msg');
+Route::post('/Delete-User-Msg', 'MessageController@handleDeleteUserMsg')->name('Delete-User-Msg');
+Route::post('/Edit-User-Msg', 'MessageController@handleEditUserMsg')->name('Edit-User-Msg');
 
 Route::get('/', function () {
     return view('User.login');

@@ -2,7 +2,7 @@
 @include('header.nav_bar_toe')
 <link rel="stylesheet" type="text/css" href="{{ asset('public/css/custom.css')}}">
 
-
+<meta name="csrf-token" content="{{ csrf_token() }}" />
 <div class="content-wrapper">
   <div class="content-body">
 

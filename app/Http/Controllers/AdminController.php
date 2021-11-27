@@ -27,6 +27,11 @@ class AdminController extends Controller
         return \View::make('Broker.Dated_Single_Result');
     }
 
+    public function handleAdminSetting() {
+        return \View::make('Broker.Admin-Account');
+    }
+    
+
 
 
 

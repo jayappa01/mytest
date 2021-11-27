@@ -52,7 +52,8 @@
         class="icon-calculator"></i><span class="menu-title" data-i18n="">See Hisab</span></a></li>
      <li class=" nav-item active"><a href="{{route('User-Account')}}"><i class="icon-users"></i><span
         class="menu-title" data-i18n="">User Setting</span></a></li>
-
+ <li class=" nav-item active"><a href="{{route('Admin-Setting')}}"><i class="icon-users"></i><span
+        class="menu-title" data-i18n="">Admin Setting</span></a></li>
 
       </ul>
     </div>

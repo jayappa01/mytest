@@ -118,3 +118,22 @@ width: 0;
   transform: translate(-12px, 38px) rotate(-90deg);
   padding: 5px 10px;
 }
+
+.last-dot {
+  position: relative;
+  display: inline-block;
+  width:8px;
+  white-space: nowrap;
+  border-radius: 1000px;
+  vertical-align: bottom;
+}
+
+.last-dot i {
+  position: absolute;
+  right: -7px;
+  bottom: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+

@@ -62,4 +62,41 @@ class DoubleGameDetailController extends Controller
 	
 	}
 
+    public function handleLoadPanna(Request $request) {
+       $post = $request->post();
+
+       $arrPattis =DB::table('pattis')->select()->where('number', $post['patti'])->get();
+        return response()->json($arrPattis);
+    }
+
+    public function handleDoubleGameResult(Request $request) {
+       $post = $request->post();
+
+         $request->validate([
+            'result_type' => 'required',
+            'gameid' => 'required',
+            'patti' => 'required',
+            'panna' => 'required',
+        ]);
+
+        $AddUserModel = new GameDetailModel;
+        $AddUserModel->AddDoubleGameResult($request->all());
+
+        if( isset($post['UserID'])){
+            $massege =  [
+                'success' => true,
+                'message' => 'Data Updated successfully'
+            ];
+        } else {
+             $massege =  [
+                'success' => true,
+                'message' => 'Data inserted successfully'
+            ];
+        }
+    
+         return response()->json($massege);
+    }
+
+    
+
 }

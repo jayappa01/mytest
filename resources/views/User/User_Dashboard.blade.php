@@ -1,5 +1,6 @@
 @include('header.nav_bar_head')
 @include('header.nav_bar_toe')
+<meta name="csrf-token" content="{{ csrf_token() }}" />
 <div class="content-wrapper m-0 p-0">
   <div class=" w-100 position-absolute" style=" opacity:0.3; height:300px!important; background-image: linear-gradient(319deg, #997575, #7A5D5D, #5b4646 , #3d2e2e ,#2d2323);"></div>
   <div class="content-header row"></div>

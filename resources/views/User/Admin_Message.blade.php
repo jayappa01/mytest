@@ -1,6 +1,6 @@
 @include('header.nav_bar_head')
 @include('header.nav_bar_toe')
-
+<meta name="csrf-token" content="{{ csrf_token() }}" />
 
 <div class="content-wrapper p-1">
   <div class="content-body">

@@ -1,12 +1,22 @@
 <?php
+namespace App\Http\Controllers;
+use Illuminate\Http\Request;
+use App\AddUserModel; 
+use DB;
 
+class UserDashboardController extends Controller
+{
     public function handleAddUser() {
         return \View::make('Broker.Add_User');
     }
 
     public function handleCreateGameResult() {
-                ->select('games.id as Gameid' ,'games.game_name','games.serial_number','games.open_time','games.close_time','game_results.id','game_results.openpanna','game_results.open','game_results.closepanna','game_results.close')
+DB::enableQueryLog();
+                $arrGameDetails = DB::table('games')
+            ->leftJoin('game_results', 'games.id', '=', 'game_results.game_id')->select('games.id as Gameid' ,'games.game_name','games.serial_number','games.open_time','games.close_time','game_results.id','game_results.openpanna','game_results.open','game_results.closepanna','game_results.close')
                 ->where('games.game_type',2)->get();
+// dd(DB::getQueryLog());
+                // dd($arrGameDetails);
 
         return \View::make('Broker.Add_Results',compact('arrGameDetails'));
     }

@@ -95,4 +95,46 @@ class GameDetailModel extends Model
 		}
     
     }
+
+    
+     public function AddDoubleGameResult($data) {
+     	// dd($data);
+
+     	$intResultType = $data['result_type'];
+     	$intGameId = $data['gameid'];
+     	$intResultId = $data['result_id'];
+
+     	DB::beginTransaction();
+			DB::enableQueryLog();
+		if( isset( $intResultId ) && $intResultType == 2 ) {
+			$arrGameDetails = [
+				'closepanna' => $data['panna'],
+				'close' => $data['patti']
+			];
+			try {
+
+				DB::table('game_results') ->where('id',$intResultId) ->limit(1) ->update( $arrGameDetails ); 
+				DB::enableQueryLog();
+			     DB::commit();
+			} catch (\Exception $e) {
+			    DB::rollback();
+			}
+		} else {
+			if( false == isset( $intResultId ) && $intResultType == 1 ) {
+			$arrGameDetails = [
+				'game_id' => $data['gameid'],
+				'openpanna' => $data['panna'],
+				'open' => $data['patti']
+			];
+
+				try {
+					 DB::table('game_results')->insert( $arrGameDetails );
+				     DB::commit();
+				} catch (\Exception $e) {
+					dd($e);
+				    DB::rollback();
+				}
+			}
+     	}
+	}
 }
